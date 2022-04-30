@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hydrametry/static/css/main.0ad73397.css",
+    "main.js": "/hydrametry/static/js/main.591dca01.js",
+    "static/js/787.d3d0a9df.chunk.js": "/hydrametry/static/js/787.d3d0a9df.chunk.js",
+    "index.html": "/hydrametry/index.html",
+    "main.0ad73397.css.map": "/hydrametry/static/css/main.0ad73397.css.map",
+    "main.591dca01.js.map": "/hydrametry/static/js/main.591dca01.js.map",
+    "787.d3d0a9df.chunk.js.map": "/hydrametry/static/js/787.d3d0a9df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ad73397.css",
+    "static/js/main.591dca01.js"
+  ]
+}
