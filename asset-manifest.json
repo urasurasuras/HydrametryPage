@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/HydrametryPage/static/css/main.0a5dd9c0.css",
-    "main.js": "/HydrametryPage/static/js/main.87204e74.js",
+    "main.js": "/HydrametryPage/static/js/main.a0d4dacd.js",
     "static/js/787.d3d0a9df.chunk.js": "/HydrametryPage/static/js/787.d3d0a9df.chunk.js",
     "index.html": "/HydrametryPage/index.html",
     "main.0a5dd9c0.css.map": "/HydrametryPage/static/css/main.0a5dd9c0.css.map",
-    "main.87204e74.js.map": "/HydrametryPage/static/js/main.87204e74.js.map",
+    "main.a0d4dacd.js.map": "/HydrametryPage/static/js/main.a0d4dacd.js.map",
     "787.d3d0a9df.chunk.js.map": "/HydrametryPage/static/js/787.d3d0a9df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a5dd9c0.css",
-    "static/js/main.87204e74.js"
+    "static/js/main.a0d4dacd.js"
   ]
 }
