@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+div.discord-embed-media.discord-embed-media-video > video
+{
+  max-width: 100% !important;
+}

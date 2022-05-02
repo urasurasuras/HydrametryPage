@@ -1,6 +1,10 @@
 import React from "react";
 import {Navbar, NavbarBrand, Nav, Container, NavLink} from "react-bootstrap";
 import {Endpoints} from "../../Endpoints";
+import {useLocation} from "react-router-dom";
+import {NavBarNav} from "../../NavBarNav/NavBarNav";
+import {NavBarLink} from "../NavBarLink/NavBarLink";
+import "./NavBar.css";
 
 export class NavBar extends React.Component
 {
@@ -13,34 +17,38 @@ export class NavBar extends React.Component
 
     render()
     {
-        return <Navbar bg="dark" expand="lg" sticky="top" variant="dark">
-            <Container fluid>
-                <Navbar.Brand href="#home">
+        const pathname = window.location.pathname;
+
+        return <nav className="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg">
+            <div className="container-fluid mt-1">
+                <a href="/">
                     <img src="./logo512.png" height="50rem" alt="logo" className="d-inline-block"/>
-                </Navbar.Brand>
-                <Navbar.Toggle/>
-                <Navbar.Collapse className="d-flex me-auto">
-                    <Nav className="me-auto mb-lg-0 mb-2">
-                        <NavLink href="/">Home</NavLink>
-                        <NavLink href={Endpoints.Spatoo}>Spatoo Jr.</NavLink>
-                        <NavLink href={Endpoints.AboutUs}>About Us</NavLink>
-                    </Nav>
-                    <Nav>
-                        <NavLink href="#">
-                            <i className="bi bi-instagram"></i>
-                        </NavLink>
-                        <NavLink href="#">
-                            <i className="bi bi-facebook"></i>
-                        </NavLink>
-                        <NavLink href="#">
+                </a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span className="navbar-toggler-icon"/>
+                </button>
+                <div className="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+                    <NavBarNav className="flex-shrink-0">
+                        <NavBarLink href="/">Home</NavBarLink>
+                        <NavBarLink href={Endpoints.Spatoo}>Spatoo Jr.</NavBarLink>
+                        <NavBarLink href={Endpoints.AboutUs}>About Us</NavBarLink>
+                    </NavBarNav>
+                    <NavBarNav className=" d-flex flex-grow-1 justify-content-lg-end flex-row justify-content-center">
+                        <NavBarLink href="https://discord.gg/RNxs3KvgM9" className=" mx-2 mx-lg-0">
                             <i className="bi bi-discord"></i>
-                        </NavLink>
-                        <NavLink href="#">
-                            <i className="bi bi-envelope-fill"></i>
-                        </NavLink>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>;
+                        </NavBarLink>
+                        <NavBarLink href="https://twitter.com/hydrametry/" className=" mx-2 mx-lg-0">
+                            <i className="bi bi-twitter"></i>
+                        </NavBarLink>
+                        <NavBarLink href="https://www.youtube.com/channel/UC8d2bDfXs9edY-OQxXzZ3nw" className=" mx-2 mx-lg-0">
+                            <i className="bi bi-youtube"></i>
+                        </NavBarLink>
+                        <NavBarLink href="mailto:andrew@hydrametry.com" className=" mx-2 mx-lg-0">
+                            <i className="bi bi-envelope"></i>
+                        </NavBarLink>
+                    </NavBarNav>
+                </div>
+            </div>
+        </nav>;
     }
 }

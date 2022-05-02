@@ -1,5 +1,5 @@
 export const Endpoints = {
-    Spatoo : "spatoojr",
-    AboutUs : "about-us",
-    NotFound: "404"
+    Spatoo : `/spatoojr`,
+    AboutUs : `/about-us`,
+    NotFound: `/404`
 };
