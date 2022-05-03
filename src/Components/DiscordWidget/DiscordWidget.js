@@ -17,7 +17,7 @@ export class DiscordWidget extends React.Component
         return <div className="mx-auto mt-5">
             <h3 className="text-start">Announcement Feed</h3>
             <div className="d-flex flex-column text-wrap" style={{height: "40rem", overflowY: "scroll"}}>
-                <DiscordMessages className="text-start">
+                <DiscordMessages className="text-start text-break">
                         {this.props.messages.map(x => <DiscordMessage key={x.id} author={x.author.username} avatar={this.getAvatarUri(x.author.id, x.author.avatar)} timestamp={new Date(x.timestamp)}>
                             {x.content}
                             {

@@ -30,7 +30,7 @@ export class SpatooJr extends React.Component
                 </div>
             </Row>
             {this.state.loaded ? <DiscordWidget height="400" width="50%" messages={this.state.messages}/> :
-                <div>
+                <div className="mt-5">
                     <h5 className="card-title placeholder-glow">
                         <span className="placeholder col-6"></span>
                     </h5>

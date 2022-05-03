@@ -9,9 +9,9 @@ export class Footer extends React.Component
     render()
     {
         return <Navbar bg="dark" sticky="bottom" variant="dark" className="mt-5 border-top border-secondary">
-            <div className="pt-2 flex-column mx-auto">
+            <div className="vstack gap-1">
                 <p className="mb-0">{new Date().getFullYear()}&copy; Hydrametry</p>
-                <NavBarNav>
+                <NavBarNav className="mx-auto">
                     <NavBarLink href="https://discord.gg/RNxs3KvgM9"s>
                         <i className="bi bi-discord"></i>
                     </NavBarLink>
@@ -25,6 +25,10 @@ export class Footer extends React.Component
                         <i className="bi bi-envelope"></i>
                     </NavBarLink>
                 </NavBarNav>
+                <span className="mt-0 d-flex align-items-center fw-lighter mx-auto" style={{fontSize: ".5rem"}}>
+                    <span className="material-symbols-outlined" style={{fontSize: ".5rem"}}>code</span> with <span className="material-symbols-outlined" style={{fontSize: ".5rem"}}>favorite</span> by Cenngo
+                </span>
+                <i className="text-dark" style={{fontSize: ".5rem"}}>atac vurduruyo</i>
             </div>
         </Navbar>
     }
