@@ -22,7 +22,7 @@ export class NavBar extends React.Component
         return <nav className="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg">
             <div className="container-fluid mt-1">
                 <a href="/">
-                    <img src="./logo512.png" height="50rem" alt="logo" className="d-inline-block"/>
+                    <img src="./logo.png" height="50rem" alt="logo" className="d-inline-block"/>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     <span className="navbar-toggler-icon"/>
