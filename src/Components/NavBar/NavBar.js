@@ -24,10 +24,12 @@ export class NavBar extends React.Component
                 <a href="/">
                     <img src="./logo.png" height="50rem" alt="logo" className="d-inline-block"/>
                 </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    <span className="navbar-toggler-icon"/>
+                <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+                <div className="collapse navbar-collapse ms-3 mt-2" id="navbarSupportedContent">
                     <NavBarNav className="flex-shrink-0">
                         <NavBarLink href="/">Home</NavBarLink>
                         <NavBarLink href={Endpoints.Spatoo}>Spatoo Jr.</NavBarLink>
