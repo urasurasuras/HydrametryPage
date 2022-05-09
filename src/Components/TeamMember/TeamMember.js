@@ -6,9 +6,9 @@ export class TeamMember extends React.Component
 {
     render()
     {
-        return <div className="d-flex align-items-center mt-4 p-3 row">
+        return <div className={`d-flex align-items-center mt-4 p-3 row ${this.props.right ? 'bg-dark' : 'bg-secondary'}`}>
             <div className={`flex-shrink-0 order-1 col-lg-3 ${this.props.right ? 'order-lg-1' : 'order-lg-0'}`}>
-                <img src={this.props.img} alt="member img" height="200rem" width="auto"/>
+                <img src={this.props.img} alt="member img" height="200rem" width="auto" className="mt-2"/>
                 <h5>{this.props.name}</h5>
                 <h6>{this.props.caption}</h6>
                 {this.props.links?.map((x, index) => <a className="link-secondary" href={x} key={index}>{x}</a>)}
