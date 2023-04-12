@@ -13,7 +13,7 @@ export class Home extends React.Component {
         <Carousel className="mx-auto shadow-lg">
           <Carousel.Item>
             <CarouselBackdrop
-              img="/spacapture.png"
+              img="/joemama.png"
               height="30rem"
               alt="4 Fodder enemies in a patrol group with a Pursuer sideways in the distance"
             ></CarouselBackdrop>
