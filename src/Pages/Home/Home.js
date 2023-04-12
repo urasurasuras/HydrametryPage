@@ -13,7 +13,7 @@ export class Home extends React.Component {
         <Carousel className="mx-auto shadow-lg">
           <Carousel.Item>
             <CarouselBackdrop
-              img="./spacapture.png"
+              img="/spacapture.png"
               height="30rem"
               alt="4 Fodder enemies in a patrol group with a Pursuer sideways in the distance"
             ></CarouselBackdrop>
@@ -23,7 +23,7 @@ export class Home extends React.Component {
           </Carousel.Item>
           <Carousel.Item>
             <CarouselBackdrop
-              img="./unknown1.png"
+              img="/unknown1.png"
               height="30rem"
             ></CarouselBackdrop>
             {/* <Carousel.Caption>
@@ -32,7 +32,7 @@ export class Home extends React.Component {
           </Carousel.Item>
           <Carousel.Item>
             <CarouselBackdrop
-              img="./unknown2.png"
+              img="/unknown2.png"
               height="30rem"
             ></CarouselBackdrop>
             {/* <Carousel.Caption>
