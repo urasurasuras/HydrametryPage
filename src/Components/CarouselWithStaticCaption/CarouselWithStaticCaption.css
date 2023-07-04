@@ -1,0 +1,39 @@
+.carousel-container {
+    position: relative;
+}
+
+.call-to-action-button {
+    background-color: orange;
+}
+
+.text-with-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Override primary button color */
+.btn-primary {
+    background-color: orange;
+    /* Replace with your desired color */
+    border-color: goldenrod;
+    /* Replace with your desired color */
+}
+
+/* Override primary button color when pressed */
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+    background-color: darkorange;
+    /* Replace with your desired color */
+    border-color: goldenrod;
+    /* Replace with your desired color */
+}
+
+/* Override disabled button color */
+.btn-primary:disabled {
+    background-color: #CCCCCC;
+    /* Replace with your desired color */
+    border-color: #CCCCCC;
+    /* Replace with your desired color */
+    cursor: not-allowed;
+    opacity: 0.5;
+}

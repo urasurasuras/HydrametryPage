@@ -1,8 +1,10 @@
 import React from "react";
-import { Carousel, Container } from "react-bootstrap";
+import { Carousel, Container, Button } from "react-bootstrap";
 import "./Home.css";
 import { CarouselBackdrop } from "../../Components/CarouselBackdrop/CarouselBackdrop";
 import bootstrap from "bootstrap";
+import CarouselWithOverlayButton from "../../Components/CarouselWithStaticCaption/CarouselWithStaticCaption";
+import { Endpoints } from "../../Endpoints";
 
 export class Home extends React.Component {
   componentDidMount() {}
@@ -10,16 +12,16 @@ export class Home extends React.Component {
   render() {
     return (
       <div>
-        <Carousel className="mx-auto shadow-lg">
+        <CarouselWithOverlayButton
+          callToActionButton={<Button>Play Spatoo Jr NOW!</Button>}
+          href={Endpoints.ItchIo}
+        >
           <Carousel.Item>
             <CarouselBackdrop
               img="/joemama.png"
               height="30rem"
               alt="4 Fodder enemies in a patrol group with a Pursuer sideways in the distance"
             ></CarouselBackdrop>
-            {/* <Carousel.Caption>
-                        <h2>First Slide</h2>
-                    </Carousel.Caption> */}
           </Carousel.Item>
           <Carousel.Item>
             <CarouselBackdrop
@@ -39,7 +41,7 @@ export class Home extends React.Component {
                         <h2>Third Slide</h2>
                     </Carousel.Caption> */}
           </Carousel.Item>
-        </Carousel>
+        </CarouselWithOverlayButton>
         <Container className="mt-5">
           <div className="position-fixed sticky-top end-0 p-3">
             <div
