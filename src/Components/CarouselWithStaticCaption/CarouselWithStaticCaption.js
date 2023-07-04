@@ -18,7 +18,7 @@ function CarouselWithStaticCaption({ children, href }) {
           Take a quick look into our technical demo!
         </p>
         <Button
-          className="call-to-action-button text-with-shadow"
+          className="call-to-action-button text-with-shadow button-with-shadow-backdrop"
           variant="primary"
           onClick={handleClick}
         >
