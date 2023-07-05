@@ -16,6 +16,7 @@
     /* Replace with your desired color */
     border-color: darkorange;
     /* Replace with your desired color */
+    outline: none;
 }
 
 /* Override primary button color when pressed */
@@ -26,6 +27,7 @@
     /* Replace with your desired color */
     border-color: darkorange;
     /* Replace with your desired color */
+
 }
 
 /* Override disabled button color */
@@ -52,4 +54,8 @@
     bottom: 0;
     z-index: -1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button:focus {
+    box-shadow: none !important;
 }
